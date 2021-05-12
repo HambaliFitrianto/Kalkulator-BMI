@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body id="bg">
+    <section class="tampilan" id="keterangan">
+      <h1>Cara Menghitung Berat Badan Ideal dengan Kalkulator BMI</h1>
+      <p>
+        Body Mass Index (BMI) adalah cara menghitung berat badan ideal berdasarkan tinggi dan berat badan. Berbeda dengan cara perhitungan sebelumnya yang membedakan cara perhitungan pria dan wanita, BMI dibedakan berdasarkan usia.
+        Kalkulator BMI (yang juga menjadi salah satu fitur di aplikasi Halodoc) dapat digunakan oleh seseorang yang sudah berusia 20 tahun atau lebih. Nah bagi mereka yang berusia di bawah 20 tahun, ada cara lain untuk menghitungnya.
+      </p>
+      <p>
+        Dengan menggunakan kalkulator BMI, akan diketahui apakah seseorang masuk dalam kategori berat badan ideal atau tidak. Meskipun begitu, BMI dapat menimbulkan kesalahpahaman bagi atlet atau olahragawan. Sebab, berat badan juga berasal
+        dari massa otot, sehingga atlet bisa dinyatakan kelebihan berat badan, padahal sebenarnya tidak.
+      </p>
+      <h2>Sebelum mencoba kalkulator BMI, ada baiknya mengetahui beberapa keterangan mengenai perhitungan ini. Di antaranya adalah:</h2>
+      <ul>
+        <li>Angka BMI normal berada pada kisaran 18,5-25.</li>
+        <li>Jika angka BMI melebihi 25, kamu memiliki berat badan berlebih.</li>
+        <li>Sedangkan, jika angka BMI berada di bawah 18 berarti berat badanmu kurang.</li>
+        <li>Jika angka BMI sudah melebihi angka 40, sebaiknya dilakukan penanganan secepatnya karena angka ini menunjukkan tanda bahaya.</li>
+      </ul>
+      <h2>Cara menghitungnya:</h2>
+      <p>Berat badan ideal = Berat badan (kilogram): Tinggi badan (meter)</p>
+      <p>Sebagai contohnya, jika berat badan kamu 47 kilogram dan tinggi badan 1,63 meter, nilai BMI kamu adalah 47:(1,63)= 17.8. Berarti, berat badan kamu termasuk di bawah rata-rata.</p>
+    </section>
+    <section class="tampilan" id="keterangan"></section>
+    <div id="login">
+      <h1>SILAHKAN LOGIN TERLEBIH DAHULU  <br>
+        UNTUK MELAKUKAN  PENGECEKAN BBI MENGGUNAKAN KALKULATOR BMI</h1>
+      <form name="fromLogin" action="submit.html" method="post" class="login" onsubmit="return login();">
+        <label for="nama">NAMA : <input type="text" name="email" id="nama" placeholder="Masukan Nama Anda" /></label><br /><br /><br />
+        <label for="umr">UMUR : <input type="text" name="pass" id="umr" placeholder="Masukan Umur Anda" /></label><br /><br /><br />
+        <button type="reset">RESET</button>&emsp;&emsp;&emsp;&emsp;<button type="submit">SUBMIT</button>
+      </form>
+    </div>
+    <script>
+      function login() {
+        if (document.forms['fromLogin']['nama'].value == '') {
+          alert('Nama Tidak Boleh Kosong');
+          document.forms['fromLogin']['nama'].focus();
+          return false;
+        }
+        if (document.forms['fromLogin']['umr'].value == '') {
+          alert('Umur Tidak Boleh Kosong');
+          document.forms['fromLogin']['umr'].focus();
+          return false;
+        }
+        if (document.getElementById('umr').value < 20) {
+          alert('Maaf umur anda belum memenuhi syarat pengecekan berat badan ideal dengan kalkulator BMI,anda bisa mencobanya lagi ketika umur anda telah memenuhi syarat yaitu 20 tahun keatas');
+          document.forms['fromLogin']['umr'].focus();
+          return false;
+        }
+        if (document.forms['fromLogin']['nama'].value != '') {
+          document.getElementById('keterangan').style.display = 'block';
+          document.getElementById('bg').style.background = 'white';
+          document.forms['fromLogin']['nama'].focus();
+          document.getElementById('login').style.display = 'none';
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
