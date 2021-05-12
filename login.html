@@ -9,25 +9,36 @@
   </head>
   <body id="bg">
     <section class="tampilan" id="keterangan">
-      <h1>Cara Menghitung Berat Badan Ideal dengan Kalkulator BMI</h1>
-      <p>
-        Body Mass Index (BMI) adalah cara menghitung berat badan ideal berdasarkan tinggi dan berat badan. Berbeda dengan cara perhitungan sebelumnya yang membedakan cara perhitungan pria dan wanita, BMI dibedakan berdasarkan usia.
-        Kalkulator BMI (yang juga menjadi salah satu fitur di aplikasi Halodoc) dapat digunakan oleh seseorang yang sudah berusia 20 tahun atau lebih. Nah bagi mereka yang berusia di bawah 20 tahun, ada cara lain untuk menghitungnya.
-      </p>
-      <p>
-        Dengan menggunakan kalkulator BMI, akan diketahui apakah seseorang masuk dalam kategori berat badan ideal atau tidak. Meskipun begitu, BMI dapat menimbulkan kesalahpahaman bagi atlet atau olahragawan. Sebab, berat badan juga berasal
-        dari massa otot, sehingga atlet bisa dinyatakan kelebihan berat badan, padahal sebenarnya tidak.
-      </p>
-      <h2>Sebelum mencoba kalkulator BMI, ada baiknya mengetahui beberapa keterangan mengenai perhitungan ini. Di antaranya adalah:</h2>
-      <ul>
-        <li>Angka BMI normal berada pada kisaran 18,5-25.</li>
-        <li>Jika angka BMI melebihi 25, kamu memiliki berat badan berlebih.</li>
-        <li>Sedangkan, jika angka BMI berada di bawah 18 berarti berat badanmu kurang.</li>
-        <li>Jika angka BMI sudah melebihi angka 40, sebaiknya dilakukan penanganan secepatnya karena angka ini menunjukkan tanda bahaya.</li>
-      </ul>
-      <h2>Cara menghitungnya:</h2>
-      <p>Berat badan ideal = Berat badan (kilogram): Tinggi badan (meter)</p>
-      <p>Sebagai contohnya, jika berat badan kamu 47 kilogram dan tinggi badan 1,63 meter, nilai BMI kamu adalah 47:(1,63)= 17.8. Berarti, berat badan kamu termasuk di bawah rata-rata.</p>
+            <br />
+      <h2>BMI Calculator</h2>
+      <div id="container">
+        <label for="BB"><b>BERAT BADAN (Kg) :</b></label
+        ><input type="text" id="BB" /> <label for="TB"><b>TINGGI BADAN (Cm) :</b></label
+        ><input type="text" id="TB" /> <button id="btn"><b>Cek</b></button><br />
+        <label for="BMI"><b>BMI :</b></label
+        ><input type="text" id="BMI" />
+      </div>
+      <br />
+      <div id="table">
+        <table>
+          <h3 align="center">BMI</h3>
+          <tr>
+            <th>Berat Badan Kurang</th>
+            <th>Berat Badan Ideal</th>
+            <th>Berat Badan Lebih</th>
+            <th>Gemuk</th>
+            <th>Sangat Gemuk</th>
+          </tr>
+          <tr>
+            <td>18.4 ke bawah</td>
+            <td>18.5–24.9</td>
+            <td>25.0–29.9</td>
+            <td>30-39.9</td>
+            <td>40 ke atas</td>
+          </tr>
+        </table>
+      </div>
+      <br /><br />
     </section>
     <section class="tampilan" id="keterangan"></section>
     <div id="login">
