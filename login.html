@@ -39,6 +39,15 @@
         </table>
       </div>
       <br /><br />
+      <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click', function () {
+          var berat_badan = document.getElementById('BB').value;
+          var tinggi_badan = document.getElementById('TB').value;
+          var hasil_BMI = (berat_badan / (tinggi_badan * tinggi_badan)) * 10000;
+          document.getElementById('BMI').value = hasil_BMI;
+        });
+      </script>
     </section>
     <section class="tampilan" id="keterangan"></section>
     <div id="login">
