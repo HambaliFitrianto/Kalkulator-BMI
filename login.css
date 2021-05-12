@@ -28,7 +28,7 @@ body {
 
 input[type='text'] {
     margin: 5px auto;
-    width: 105%;
+    width: 100%;
     height: 0;
     padding: 22px;
     font-size: 15px;
@@ -46,5 +46,48 @@ button[type='reset'],
 }
 
 .tampilan {
+    background-image: url(diet-dash.jpg);
+    background-size: cover;
     display: none;
+}
+
+h2 {
+  text-align: center;
+  text-shadow: 8px 5px 2px blue;
+  font-size: 80px;
+  color: aqua;
+}
+
+#container {
+  background: rgba(120, 224, 238, 0.8);
+  height: 260px;
+  width: 450px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+#btn {
+  float: right;
+  margin: 0 auto;
+  padding: 5px;
+  width: 70px;
+  border-radius: 20px;
+  background: orangered;
+  border: 2px solid rgb(168, 49, 6);
+}
+
+#table {
+  height: 160px;
+  width: 450px;
+  margin: 0 auto;
+  background: rgba(120, 224, 238, 0.8);
+  border: 1px solid black;
+}
+
+table,
+th,
+td {
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
 }
