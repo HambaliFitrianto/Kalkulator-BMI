@@ -105,9 +105,6 @@ td {
     width: 290px;
   }
   input[type='text'] {
-      margin: 5px auto;
-      width: 100%;
-      height: 0;
       padding: 15px;
       font-size: 20px;
   }
