@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Cambria;
+}
+header{
+    margin-top: 30px;
+    text-indent: 30px;
+    padding: 30px;
+    padding-bottom: 50px;
+    font-size: 30px;
+    text-align: left;
+    background-color: rgba(135, 206, 250, 0.829);
+    background-size: 100%;
+}
+body{
+    padding: 15px;
+    text-align: center;
+    background-image: url(https://cdn.hellosehat.com/wp-content/uploads/2019/03/diet-dash.jpg);
+    background-size: cover;
+}
+.responsive {
+    padding:3px;
+    float: left;
+    width: 20%;
+}
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+div.gallery {
+    border: 5px solid silver;
+    background-color: rgba(135, 206, 250, 0.836);
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+.gallery:hover{
+    border: 5px solid lightskyblue;
+}
+div.gallery img {
+    width: 200px;
+    height: 200px; 
+    border-radius: 100% ;
+    margin: 25px;
+    border: 7px dashed white;
+} 
+
