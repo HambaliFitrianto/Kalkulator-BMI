@@ -1,5 +1,5 @@
 body {
-    background-image: url(diet-dash.jpg);
+    background-image: url(bg2.jpg);
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -46,7 +46,7 @@ button[type='reset'],
 }
 
 .tampilan {
-    background-image: url(diet-dash.jpg);
+    background-image: url(bg2.jpg);
     background-size: cover;
     display: none;
 }
