@@ -78,6 +78,7 @@ nav ul li a:hover{
   border: 3px solid aqua;
   display: block;
   text-align: center;
+  font-size: 50px;
 }
 .go p{
   display:inline-block;
@@ -136,6 +137,9 @@ nav ul li a:hover{
   }
   .active{
   	box-shadow:none;
+  }
+  .go h2{
+    font-size: 35px;
   }
   .go p{
     display: block;
