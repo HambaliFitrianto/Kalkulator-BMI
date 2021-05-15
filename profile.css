@@ -9,14 +9,14 @@ p{
     text-indent: 30px;
     padding: 25px;
     padding-bottom: 30px;
-    font-size: 50px;
+    font-size: 65px;
     text-align: left;
     background-color: rgba(135, 206, 250, 0.829);
     background-size: 100%;
 }
 body{
     text-align: center;
-    background-image: url(https://cdn.hellosehat.com/wp-content/uploads/2019/03/diet-dash.jpg);
+    background-image: url(diet-dash.jpg);
     background-size: cover;
 }
 .responsive {
@@ -25,11 +25,6 @@ body{
     width: 20%;
 }
 @media only screen and (max-width: 700px) {
-    .responsive {
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 500px) {
     .responsive {
         width: 100%;
     }
