@@ -39,16 +39,22 @@ div.gallery {
 .gallery:hover{
     border: 5px solid lightskyblue;
 }
-div.gallery img {
+div.gallery .foto {
     width: 200px;
     height: 200px; 
     border-radius: 100% ;
     margin: 25px;
     border: 7px solid white;
 } 
-i,a {
+a {
     color: black;
     text-decoration: none;
 }
-
+.gambar {
+    width: 25px;
+    height: 25px; 
+    border-radius: none;
+    margin: 0;
+    border: none;
+}
 
